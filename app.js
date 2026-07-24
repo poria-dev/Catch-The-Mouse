@@ -231,6 +231,7 @@ function f() {
                     alert("💔 Game Over! You lost all your hearts.")
                     clone()
 
+                    
                     setTimeout(() => {
 
 
