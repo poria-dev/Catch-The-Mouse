@@ -167,26 +167,23 @@ function f() {
                 if (joon == 4) {
 
                     heart.innerHTML = "❤️ ❤️ ❤️ ❤️ 🖤"
-                    missed.play()
-                    missed.currentTime = 0
+                
 
                 } else if (joon == 3) {
 
                     heart.innerHTML = "❤️ ❤️ ❤️ 🖤 🖤"
-                    missed.play()
-                    missed.currentTime = 0
+                    
 
                 } else if (joon == 2) {
 
                     heart.innerHTML = "❤️ ❤️ 🖤 🖤 🖤"
-                    missed.play()
-                    missed.currentTime = 0
+                    
+                    
 
                 } else if (joon == 1) {
 
                     heart.innerHTML = "❤️ 🖤 🖤 🖤 🖤"
-                    missed.play()
-                    missed.currentTime = 0
+    
 
                 } else if (joon == 0) {
 
