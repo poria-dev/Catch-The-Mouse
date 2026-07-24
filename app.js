@@ -86,13 +86,11 @@ btn.addEventListener("click", () => {
                 clearInterval(timer_random)
 
                 timer = 30
+                clone()
                 clicky = 0
-
                 h2.innerHTML = "⏱ 30s"
                 h3.innerHTML = clicky
-
                 btn.removeAttribute("disabled")
-                clone()
                 location.reload()
 
             }
