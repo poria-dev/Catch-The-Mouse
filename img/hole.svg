@@ -1,0 +1,160 @@
+
+<svg
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 220 220"
+width="95"
+height="95">
+
+<defs>
+
+<radialGradient id="ground" cx="50%" cy="35%">
+<stop offset="0%" stop-color="#9b7756"/>
+<stop offset="60%" stop-color="#6f4d34"/>
+<stop offset="100%" stop-color="#493222"/>
+</radialGradient>
+
+<radialGradient id="hole" cx="50%" cy="40%">
+<stop offset="0%" stop-color="#222"/>
+<stop offset="55%" stop-color="#111"/>
+<stop offset="100%" stop-color="#000"/>
+</radialGradient>
+
+<linearGradient id="shine" x1="0" x2="1">
+<stop offset="0%" stop-color="#fff" stop-opacity=".7"/>
+<stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+
+<filter id="shadow">
+
+<feDropShadow
+dx="0"
+dy="6"
+stdDeviation="8"
+flood-color="#000"
+flood-opacity=".45"/>
+
+</filter>
+
+</defs>
+
+<!-- زمین -->
+
+<ellipse
+cx="110"
+cy="110"
+rx="92"
+ry="70"
+fill="url(#ground)"
+filter="url(#shadow)"/>
+
+<!-- سایه داخلی -->
+
+<ellipse
+cx="110"
+cy="122"
+rx="64"
+ry="42"
+fill="#24170f"
+opacity=".45"/>
+
+<!-- لبه بیرونی -->
+
+<ellipse
+cx="110"
+cy="110"
+rx="66"
+ry="45"
+fill="#6a4a2e"/>
+
+<!-- لبه روشن -->
+
+<ellipse
+cx="110"
+cy="105"
+rx="60"
+ry="39"
+fill="#886243"/>
+
+<!-- حفره -->
+
+<ellipse
+cx="110"
+cy="110"
+rx="52"
+ry="31"
+fill="url(#hole)"/>
+
+<!-- عمق -->
+
+<ellipse
+cx="110"
+cy="118"
+rx="38"
+ry="18"
+fill="#000"
+opacity=".55"/>
+
+<!-- نور -->
+
+<ellipse
+cx="90"
+cy="92"
+rx="24"
+ry="9"
+fill="url(#shine)"
+opacity=".6"/>
+
+<!-- سنگ -->
+
+<circle cx="42" cy="98" r="6" fill="#8d8d8d"/>
+<circle cx="53" cy="120" r="5" fill="#7b7b7b"/>
+<circle cx="175" cy="130" r="7" fill="#808080"/>
+<circle cx="160" cy="88" r="5" fill="#999"/>
+
+<!-- چمن -->
+
+<path d="M24 78
+l5-18
+l4 18
+l6-15
+l3 15
+l5-12
+l2 12"
+stroke="#48b04f"
+stroke-width="3"
+fill="none"
+stroke-linecap="round"/>
+
+<path d="M188 83
+l4-16
+l5 16
+l5-12
+l4 12
+l5-15
+l3 15"
+stroke="#4dbd53"
+stroke-width="3"
+fill="none"
+stroke-linecap="round"/>
+
+<path d="M72 168
+l4-14
+l4 14
+l5-12
+l4 12"
+stroke="#58bf5e"
+stroke-width="3"
+fill="none"
+stroke-linecap="round"/>
+
+<path d="M150 170
+l4-13
+l5 13
+l5-11
+l4 11"
+stroke="#56b85c"
+stroke-width="3"
+fill="none"
+stroke-linecap="round"/>
+
+</svg>
