@@ -6,9 +6,9 @@ const h2 = document.getElementById("h2")
 const h3 = document.getElementById("h3")
 const heart = document.querySelector(".heart")
 const sp = document.querySelector(".sp")
-const tr = new Audio("audio/Hammer_Nail_Hit_4.mp3")
+const tr = new Audio("audio/hit-sound-fight.mp3")
 const missed = new Audio("audio/Wrong Answer Sound Effect.mp3")
-const win = new Audio("audioVictory Sound Effects 4.mp3")
+const win = new Audio("audio/Victory Sound Effects 4.mp3")
 const lose = new Audio("audio/Sad Trombone Wah Wah Wah Fail Sound Effect.mp3")
 const record = document.querySelector("#record")
 
@@ -46,25 +46,27 @@ function random() {
 
                 if (index == ran) {
 
-                    val.innerHTML = "🐭"
+                    val.innerHTML = `<img src="img/mouse.svg" alt="Hole">`
 
                 } else {
 
-                    val.innerHTML = "🕳️"
+                    val.innerHTML = `<img src="img/hole.svg" alt="Hole">`
 
                 }
 
             })
 
-        }, 550)
+        }, 380)
 
-    }, 750)
+    }, 580)
 
-    f()
+
 
 }
 
 btn.addEventListener("click", () => {
+
+    alert("The game has started 🔴")
 
     div.forEach((val) => {
         val.removeAttribute("disabled")
@@ -125,7 +127,13 @@ btn2.addEventListener("click", () => {
     div.forEach((val) => {
         val.setAttribute("disabled", "disabled")
     })
-    heart.innerHTML = "❤️ ❤️ ❤️ ❤️ ❤️"
+    heart.innerHTML = `
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-heart"></i>
+    `;
 
     location.reload()
 
@@ -135,16 +143,16 @@ function f() {
 
     div.forEach((val, index) => {
 
-        val.addEventListener("dblclick", () => {
+        val.addEventListener("click", () => {
 
-            if (clicky == 5) {
-
-                alert("🎉 Congratulations! You caught all 7 mice!")
+            if (clicky == 9) {
                 win.play()
                 win.currentTime = 0
+                alert("🎉 Congratulations! You caught all 5 mice!")
+
                 setTimeout(() => {
                     location.reload()
-                }, 1000);
+                }, 500);
 
             }
 
@@ -166,40 +174,69 @@ function f() {
 
                 if (joon == 4) {
 
-                    heart.innerHTML = "❤️ ❤️ ❤️ ❤️ 🖤"
-                    missed.play()
-                    missed.currentTime = 0
+                    heart.innerHTML = `
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
+                `;
+
 
                 } else if (joon == 3) {
 
-                    heart.innerHTML = "❤️ ❤️ ❤️ 🖤 🖤"
-                    missed.play()
-                    missed.currentTime = 0
+                    heart.innerHTML = `
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart"></i>
+                `;
+
+
 
                 } else if (joon == 2) {
 
-                    heart.innerHTML = "❤️ ❤️ 🖤 🖤 🖤"
-                    missed.play()
-                    missed.currentTime = 0
+                    heart.innerHTML = `
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    `;
+
 
                 } else if (joon == 1) {
 
-                    heart.innerHTML = "❤️ 🖤 🖤 🖤 🖤"
-                    missed.play()
-                    missed.currentTime = 0
+                    heart.innerHTML = `
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    `;
+
 
                 } else if (joon == 0) {
 
-                    heart.innerHTML = "🖤 🖤 🖤 🖤 🖤"
+                    heart.innerHTML = `
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    `;
                     lose.play()
                     lose.currentTime = 0
                     alert("💔 Game Over! You lost all your hearts.")
                     clone()
+
                     setTimeout(() => {
+
 
                         location.reload()
 
-                    }, 1000)
+                    }, 600)
 
                 }
 
@@ -210,6 +247,8 @@ function f() {
     })
 
 }
+
+f()
 
 
 

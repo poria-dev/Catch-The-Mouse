@@ -7,22 +7,22 @@
 }
 
 
-  body{
-    min-height:100vh;
-    background:linear-gradient(180deg,#5dbb63,#2d6a4f);
-    padding:20px;
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #5dbb63, #2d6a4f);
+    padding: 20px;
 
 
 }
 
-.container{
-    width:min(1300px,100%);
-    margin:0 auto;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    gap:35px;
-    user-select:none;
+.container {
+    width: min(1300px, 100%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    user-select: none;
 }
 
 .game {
@@ -315,126 +315,198 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
 }
 
-.footer{
+.footer {
 
-    width:100%;
+    width: 100%;
 
-    padding:50px 20px;
-
-}
-
-.footer-box{
-
-    max-width:900px;
-
-    margin:auto;
-
-    background:rgba(255,255,255,.12);
-
-    border-radius:25px;
-
-    backdrop-filter:blur(12px);
-
-    padding:40px;
-
-    text-align:center;
+    padding: 50px 20px;
 
 }
 
-.footer-box img{
+.footer-box {
 
-    width:220px;
+    max-width: 900px;
 
-    height:220px;
+    margin: auto;
 
-    border-radius:50%;
+    background: rgba(255, 255, 255, .12);
 
-    object-fit:cover;
+    border-radius: 25px;
 
-    border:5px solid white;
+    backdrop-filter: blur(12px);
 
-}
+    padding: 40px;
 
-.footer-box h2{
-
-    color:white;
-
-    margin-top:20px;
-
-    font-size:30px;
+    text-align: center;
 
 }
 
-.footer-box p{
+.footer-box img {
 
-    color:#ffe082;
+    width: 220px;
 
-    margin-top:8px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid white;
 
 }
 
-.footer-social{
+.footer-box h2 {
 
+    color: white;
+
+    margin-top: 20px;
+
+    font-size: 30px;
+
+}
+
+.footer-box p {
+
+    color: #ffe082;
+
+    margin-top: 8px;
+
+}
+
+.footer-social {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin: 30px 0;
+
+}
+
+.footer-social a {
+
+    color: white;
+
+    text-decoration: none;
+
+    background: #2b9348;
+
+    padding: 12px 20px;
+
+    border-radius: 50px;
+
+    transition: .3s;
+
+}
+
+.footer-social a:hover {
+
+    background: #1f6e36;
+
+}
+
+.footer-box span {
+
+    color: #ddd;
+
+}
+
+@media(max-width:768px) {
+
+    .footer-box {
+
+        padding: 25px;
+
+    }
+
+    .footer-social {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .footer-social a {
+
+        width: 220px;
+
+    }
+
+}
+
+.sec button svg {
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+}
+
+.sec button i {
+    font-size: 60px;
+    color: #222;
+}
+
+.fa-heart {
+    color: #ff3b5c;
+    font-size: 26px;
+}
+
+.fa-regular.fa-heart {
+    color: #555;
+}
+
+#h2 i {
+    color: #00d9ff;
+}
+
+.score i {
+    color: #ffcc00;
+}
+
+.record i {
+    color: gold;
+}
+
+#btn i,
+#btn2 i {
+    margin-right: 8px;
+}
+
+.sp {
+    position: fixed;
+    font-size: 48px;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    z-index: 99999;
+}
+
+.sp i {
+    color: #ffb300;
+    filter: drop-shadow(0 0 10px rgba(255, 180, 0, .7));
+}
+
+.sec button{
+    overflow:hidden;
     display:flex;
-
     justify-content:center;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    margin:30px 0;
-
+    align-items:center;
 }
 
-.footer-social a{
-
-    color:white;
-
-    text-decoration:none;
-
-    background:#2b9348;
-
-    padding:12px 20px;
-
-    border-radius:50px;
-
-    transition:.3s;
-
+.sec button img{
+    width:75%;
+    height:75%;
+    object-fit:contain;
+    pointer-events:none;
+    user-select:none;
 }
-
-.footer-social a:hover{
-
-    background:#1f6e36;
-
-}
-
-.footer-box span{
-
-    color:#ddd;
-
-}
-
-@media(max-width:768px){
-
-    .footer-box{
-
-        padding:25px;
-
-    }
-
-    .footer-social{
-
-        flex-direction:column;
-
-        align-items:center;
-
-    }
-
-    .footer-social a{
-
-        width:220px;
-
-    }
-
+.sp img{
+    width:70px;
+    height:70px;
+    pointer-events:none;
+    user-select:none;
+    rotate: 240deg;
 }
