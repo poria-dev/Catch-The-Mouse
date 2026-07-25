@@ -148,7 +148,7 @@ function f() {
             if (clicky == 9) {
                 win.play()
                 win.currentTime = 0
-                alert("🎉 Congratulations! You caught all 5 mice!")
+                alert("🎉 Congratulations! You caught all 10 mice!")
 
                 setTimeout(() => {
                     location.reload()
