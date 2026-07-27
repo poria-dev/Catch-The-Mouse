@@ -15,7 +15,7 @@ const record = document.querySelector("#record")
 
 
 
-let timer = 30
+let timer = 45
 let x
 let timer_random
 let ran
@@ -56,9 +56,9 @@ function random() {
 
             })
 
-        }, 380)
+        }, 880)
 
-    }, 580)
+    }, 1000)
 
 
 
@@ -87,7 +87,7 @@ btn.addEventListener("click", () => {
                 clearInterval(x)
                 clearInterval(timer_random)
 
-                timer = 30
+                timer = 45
                 clone()
                 clicky = 0
                 h2.innerHTML = "⏱ 30s"
@@ -114,7 +114,7 @@ btn2.addEventListener("click", () => {
     clearInterval(x)
     clearInterval(timer_random)
     clone()
-    timer = 30
+    timer = 45
     clicky = 0
 
     h2.innerHTML = "⏱ 30s"
