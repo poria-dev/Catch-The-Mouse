@@ -22,7 +22,7 @@
 <div align="center">
 
 ### 📱 Responsive Design Across Devices
-<img src="img/screen.png" alt="Catch The Mouse Showcase" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);" />
+<img src="img/screen.jpg" alt="Catch The Mouse Showcase" width="100%" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);" />
 
 <br/><br/>
 
