@@ -27,7 +27,7 @@
 <br/><br/>
 
 ### 🎮 Gameplay Preview
-<video src="img/gift_catch.mp4" width="80%" autoplay loop muted playsinline style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);"></video>
+<video src="img/gift_catch.gif" width="80%" autoplay loop muted playsinline style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);"></video>
 
 </div>
 
